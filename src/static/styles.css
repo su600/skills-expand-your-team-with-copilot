@@ -702,3 +702,9 @@ footer {
   border-color: var(--primary-light);
   color: white;
 }
+
+.share-btn:focus {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+  border-color: var(--border-focus);
+}
