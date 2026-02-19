@@ -1,33 +1,13 @@
-name: "Copilot Setup Steps"
-
-on: workflow_dispatch
-jobs:
-  # This is the required job name. If different, Copilot will ignore it.
-  copilot-setup-steps:
-    runs-on: ubuntu-latest
- 
-  # Starts a MongoDB service for Copilot to use during its session.
-    services:
-      mongo:
-       image: mongo:7
-       ports:
-         - 27017:27017
-
-    # Grant Copilot early access to read the repository content.
-    permissions:
-      contents: read
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
-
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.13"
-          cache: "pip"
-
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r src/requirements.txt
+# Deprecated file: copilot-setup-steps222.yml
+#
+# This file previously contained a GitHub Actions workflow definition for
+# "Copilot Setup Steps" at the repository root. GitHub Actions only
+# recognizes workflows located under the `.github/workflows/` directory.
+#
+# According to `.github/workflows/3-prepare-environment.yml` (line 92),
+# the Copilot setup workflow must be located at:
+#   .github/workflows/copilot-setup-steps.yml
+#
+# To avoid having a mislocated workflow definition, this file has been
+# intentionally left as comments only. The actual workflow should be
+# defined and maintained in `.github/workflows/copilot-setup-steps.yml`.
