@@ -1,5 +1,7 @@
 # Mergington High School Activities
 
+[English](README.md) | [中文](../README.zh-CN.md)
+
 A super simple website application that allows students to view and sign up for extracurricular activities.
 
 ## Features
